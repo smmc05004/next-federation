@@ -1,7 +1,4 @@
 /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-// }
 const NextFederationPlugin = require('@module-federation/nextjs-mf');
 
 module.exports = {
@@ -12,6 +9,7 @@ module.exports = {
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
           './home': './pages/index.tsx',
+          './contents': './components/Contents.tsx'
         },
         shared: {},
         extraOptions:{

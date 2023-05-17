@@ -1,4 +1,3 @@
-// @ts-ignore
 import HomePage from 'remote/home'
 
 const Home = HomePage

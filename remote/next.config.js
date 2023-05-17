@@ -9,6 +9,7 @@ module.exports = {
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
           './home': './pages/index.tsx',
+          './middle': './pages/middle/index.tsx',
           './contents': './components/Contents.tsx'
         },
         shared: {},
